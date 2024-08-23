@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.najeeb.dev/'),
   title: { default: 'Najeeb Qazi', template: '%s | Najeeb Qazi' },
-  description: 'Developer & YouTuber',
+  description: 'Developer',
   openGraph: {
     title: 'Najeeb Qazi',
     description: 'Software Engineer',

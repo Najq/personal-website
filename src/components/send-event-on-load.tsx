@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react';
 
-import { trackEvent } from '@/lib/tracking';
 
 export function SendEventOnLoad({
   eventKey,
@@ -16,13 +15,6 @@ export function SendEventOnLoad({
   useEffect(() => {
     if (isSent.current) return;
     isSent.current = true;
-    trackEvent(eventKey)
-      .then(() => {
-        afterEventSent?.();
-      })
-      .catch((err) => {
-        console.error('Error sending event:', err);
-      });
   }, [eventKey, afterEventSent]);
 
   return null;
