@@ -1,4 +1,4 @@
-# My portfolio ✨
+# Personal website
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Database**: [Upstash Redis](https://upstash.com/)
@@ -21,3 +21,4 @@ Go to [Upstash](https://upstash.com/), create an account, create a database in U
 ## Analytics
 
 Go to [Beam Analytics](https://beamanalytics.io/), add your url and replace the data-token in src/app/layout.tsx.
+
