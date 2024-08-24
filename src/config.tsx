@@ -8,7 +8,7 @@ export const CONFIG = {
   headshot: '/headshot.jpg',
   title: 'Software Engineer',
   description: `Hi 👋, I'm Najeeb. I'm based in Vancouver, BC (absolutely lovely city). Currently tweaking customer experience @ Alida. Previously worked as a Data Scientist at Statistics Canada.`,
-  nowContent : `Shedding some light on what I'm working on currently. Focussed on building efficient APIs using Go and Node.js. Trying to get my hands dirty with some Jijutsu in the spare time.`,
+  nowContent : `Shedding some light on what I'm working on currently. Focused on building efficient APIs using Go and Node.js. Trying to get my hands dirty with some Jijutsu in the spare time.`,
   socials: [
     { platform: 'X', link: 'https://twitter.com/najeebqazii', icon: <XIcon /> },
     {
@@ -60,7 +60,7 @@ export const CONFIG = {
       name: 'Alida',
       description: 'Software Engineer',
       image: '/icons/work-experience.jpg',
-      link: '#',
+      link: '/alida',
     },
     {
       name: 'Statistics Canada',

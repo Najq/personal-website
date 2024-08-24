@@ -49,7 +49,7 @@ export default async function Home() {
             <div className="flex flex-col space-y-2">
               <span className="font-semibold">Now</span>
               <span className="text-neutral-300/80 leading-6">
-              Inspired by the <a href="https://nownownow.com/about">Derek Sivers now movement</a> 
+              Inspired by the <a className='text-purple-600' href="https://nownownow.com/about" target="_blank">Derek Sivers now movement</a> 
               <div></div>
               {CONFIG.nowContent}
               

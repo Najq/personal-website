@@ -45,7 +45,7 @@ export default function NowPage() {
         </p>
         <h2 className="text-2xl font-bold mb-4">Learning</h2>
         <div className="space-y-4">
-            <p className="mb-4">I've started keeping a <a className="font-bold" href="https://fortelabs.com/blog/basboverview/" target="_blank">second brain</a> in Notion, I'm just wondering why I'm so late to this. It's immensely helpful for gaining some clarity on the different areas of your life.</p>
+            <p className="mb-4">I've started keeping a <a className="text-purple-600" href="https://fortelabs.com/blog/basboverview/" target="_blank">second brain</a> in Notion, I'm just wondering why I'm so late to this. It's immensely helpful for gaining some clarity on the different areas of your life.</p>
         </div>
         <h2 className="text-2xl font-bold mb-4">Entertainment stuff</h2>
         <div className="space-y-4">
