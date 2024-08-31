@@ -94,6 +94,9 @@ export default async function Home() {
                               {workExp.description}
                             </span>
                           </div>
+                          <div style={{"marginLeft":"2rem", fontSize: "12px", fontFamily:"cursive"}}>
+                            {workExp.dates}
+                          </div>
                         </div>
                       </Link>
                     );                  

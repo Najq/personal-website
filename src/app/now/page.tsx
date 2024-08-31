@@ -39,13 +39,13 @@ export default function NowPage() {
         <h1 className='italic py-2'>Last updated - August 2024</h1>
         <main className="container mx-auto px-1 mt-15">
         <h2 className="text-2xl font-bold mb-4">Now working on</h2>
-        <p className="mb-4">I'm currently transitioning from my role at Alida and moving on to Caylent, which is focussed on providing consulting services using AWS.
-            <p> In my last week at Alida, I set up and end-end testing framework by dockerizing the back-end services. I'm just surprised why I didn't do it earlier, it was straightforward albeit a few hiccups. Mostly because the app depends a lot on external services.</p>
-            <p> I realized I miss writing programs in Go, so I'm going back to it and planning to write neural networks using Go, I've heard deep learning is an issue with Go? Let's find out. </p>
+        <p className="mb-4">I'm currently transitioning from my role at Alida and moving on to Caylent, which is focused on providing consulting services using AWS.
+            <p> In my last week at Alida, I set up an end-end testing framework by dockerizing the back-end services. I do love the ability to unify developer platforms using docker, makes onboarding much simpler.  Reflecting back on my time here has been gratifying, I've learnt a lot in the past three years, worked with a lot of smart engineers and built some cool stuff. </p>
+            <p> I miss writing programs in Go, so I'm planning to write neural networks from scratch using Go, I've heard deep learning is an issue with Go? Let's find out. </p>
         </p>
         <h2 className="text-2xl font-bold mb-4">Learning</h2>
         <div className="space-y-4">
-            <p className="mb-4">I've started keeping a <a className="text-purple-600" href="https://fortelabs.com/blog/basboverview/" target="_blank">second brain</a> in Notion, I'm just wondering why I'm so late to this. It's immensely helpful for gaining some clarity on the different areas of your life.</p>
+            <p className="mb-4">I've started keeping a <a className="text-purple-600" href="https://fortelabs.com/blog/basboverview/" target="_blank">second brain</a> in Notion, pretty late to this trend, I know. It's immensely helpful for gaining some clarity on the different areas of your life.</p>
         </div>
         <h2 className="text-2xl font-bold mb-4">Entertainment stuff</h2>
         <div className="space-y-4">
@@ -53,7 +53,7 @@ export default function NowPage() {
         </div>
         <h2 className="text-2xl font-bold mb-4">Reading</h2>
         <div className="space-y-4">
-            <p className="mb-4">Finishing Meditations by Marcus Aurelius, was on my list for a long time.</p>
+            <p className="mb-4">Finishing Meditations by Marcus Aurelius, was on my list for a long time. Almost halfway through Tomorrow And Tomorrow And Tomorrow by Gabrielle Zevin, it's a fun read so far.</p>
         </div>
     </main>
       </div>
