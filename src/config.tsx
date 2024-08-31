@@ -8,7 +8,7 @@ export const CONFIG = {
   headshot: '/headshot.jpg',
   title: 'Software Engineer',
   description: `Hi 👋, I'm Najeeb. I'm based in Vancouver, BC (absolutely lovely city). Currently tweaking customer experience @ Alida. Previously worked as a Data Scientist at Statistics Canada.`,
-  nowContent : `Shedding some light on what I'm working on currently. Focused on building efficient APIs using Go and Node.js. Trying to get my hands dirty with some Jijutsu in the spare time.`,
+  nowContent : `Shedding some light on what I'm working on currently. Focused on building efficient APIs using Go and Node.js.`,
   socials: [
     { platform: 'X', link: 'https://twitter.com/najeebqazii', icon: <XIcon /> },
     {
@@ -59,20 +59,23 @@ export const CONFIG = {
     {
       name: 'Alida',
       description: 'Software Engineer',
-      image: '/icons/work-experience.jpg',
-      link: '/alida',
+      image: '/icons/alida.png',
+      link: '/work',
+      dates: "September 2021 - August 2024"
     },
     {
       name: 'Statistics Canada',
       description: 'Data Scientist',
-      image: '/icons/work-experience.jpg',
-      link: '#',
+      image: '/icons/statscan.jpg',
+      link: '/work',
+      dates: "May 2020 - September 2021"
     },
     {
       name: 'ZS Associates',
       description: 'Software Engineer',
-      image: '/icons/work-experience.jpg',
-      link: '#',
+      image: '/icons/zs.png',
+      link: '/work',
+      dates: "September 2017 - June 2019"
     },
   ]
 };
