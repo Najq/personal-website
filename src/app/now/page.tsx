@@ -1,8 +1,6 @@
 import React from 'react';
 
-
 import Link from 'next/link';
-
 
 export const metadata = {
   title: 'Now page',
@@ -36,26 +34,48 @@ export default function NowPage() {
         <span className="text-4xl font-bold md:px-6 mb-6 md:mb-4 animate-slide-from-down-and-fade-2">
           Now
         </span>
-        <h1 className='italic py-2'>Last updated - August 2024</h1>
+        <h1 className="italic py-2">Last updated - December 2024</h1>
         <main className="container mx-auto px-1 mt-15">
-        <h2 className="text-2xl font-bold mb-4">Now working on</h2>
-        <p className="mb-4">I'm currently transitioning from my role at Alida and moving on to Caylent, which is focused on providing consulting services using AWS.
-            <p> In my last week at Alida, I set up an end-end testing framework by dockerizing the back-end services. I do love the ability to unify developer platforms using docker, makes onboarding much simpler.  Reflecting back on my time here has been gratifying, I've learnt a lot in the past three years, worked with a lot of smart engineers and built some cool stuff. </p>
-            <p> I miss writing programs in Go, so I'm planning to write neural networks from scratch using Go, I've heard deep learning is an issue with Go? Let's find out. </p>
-        </p>
-        <h2 className="text-2xl font-bold mb-4">Learning</h2>
-        <div className="space-y-4">
-            <p className="mb-4">I've started keeping a <a className="text-purple-600" href="https://fortelabs.com/blog/basboverview/" target="_blank">second brain</a> in Notion, pretty late to this trend, I know. It's immensely helpful for gaining some clarity on the different areas of your life.</p>
-        </div>
-        <h2 className="text-2xl font-bold mb-4">Entertainment stuff</h2>
-        <div className="space-y-4">
-            <p className="mb-4">I really miss hiking since I got a concussion while playing jijutsu, taking some time to recover but can't wait to lift heavy and go climb some mountains.</p>
-        </div>
-        <h2 className="text-2xl font-bold mb-4">Reading</h2>
-        <div className="space-y-4">
-            <p className="mb-4">Finishing Meditations by Marcus Aurelius, was on my list for a long time. Almost halfway through Tomorrow And Tomorrow And Tomorrow by Gabrielle Zevin, it's a fun read so far.</p>
-        </div>
-    </main>
+          <h2 className="text-2xl font-bold mb-4">Now working on</h2>
+          <p className="mb-4">
+            Working at Caylent has been fun so far. I'm enjoying the holidays,
+            resting and recharging before 2025.
+            <p>
+              {' '}
+              I'm also working on a side project, which is simple word game
+              based on guessing the word based on the context that the words
+              apprear in. You can check it out at{' '}
+              <a href="https://www.guessword.link"> here </a>{' '}
+            </p>
+            <p> </p>
+          </p>
+          <h2 className="text-2xl font-bold mb-4">Learning</h2>
+          <div className="space-y-4">
+            <p className="mb-4">
+              I've picked up learning the keyboard, which has been a fun way to
+              dip my toes into music.{' '}
+            </p>
+          </div>
+          <h2 className="text-2xl font-bold mb-4">Entertainment stuff</h2>
+          <div className="space-y-4">
+            <p className="mb-4">
+              Going to christmas markets and paying for the overpriced hot
+              chocolates. 🫡{' '}
+            </p>
+          </div>
+          <h2 className="text-2xl font-bold mb-4">Reading</h2>
+          <div className="space-y-4">
+            <p className="mb-4">
+              Reading Intermezzo by Sally Rooney and Thinking Fast and Slow by
+              Daniel Kahneman (two polar opposite book choices, I know). I
+              picked up Sally Rooney since I heard about her writing through
+              Tiktok a lot, and wanted to give it a try. It's been a great read
+              so far. I'm re-reading Thinking Fast and Slow since I read it a
+              few years ago and wanted to refresh my memory on the ideas
+              mentioned in the book.
+            </p>
+          </div>
+        </main>
       </div>
     </div>
   );

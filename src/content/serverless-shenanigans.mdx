@@ -1,0 +1,46 @@
+---
+title: 'Shenanigans of Serverless functions'
+summary: 'The size can be limiting, nothing new'
+publishedAt: '2024-12-28'
+slug: 'serverless'
+featured: 'true'
+tag: 'technical'
+---
+
+Serverless functions are great, zero worrying about server set-up. Just write your code and deploy, and boom you're done.
+In my simple use case of building a word game with some AI features, I thought the 250 MB limit imposed by AWS for serverless functions wouldn't be an issue.
+...only if you're dealing with AI through an API.
+
+Considering that my usecase was just to receive a randomd word, and make a word-embedding out of it and then calculate similarity scores. I decided to try putting the small embedding models on the serverless function itself.
+Models I considered
+
+1. Word2Vec
+2. Spacy - en_core_sm
+
+Quickly I realized that even the simplest models are not less than 250 MB, the only work around was using the spacy model and stripping it away its language features.
+And guess what, someone has already done it.
+Shout out to - [Keith Rozario](https://www.keithrozario.com/2019/04/spacy-in-a-lambda-layer.html)
+
+--
+
+Ultimately, for the usecase, I decided to use Google's Gemini, which provided an emebedding at a pretty good speed. If you play around with the application you can notice the lag.
+
+```go
+
+// create a client
+	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("API_KEY")))
+	if err != nil {
+		log.Printf("failed to create client: %v", err)
+	}
+	defer client.Close()
+
+	em := client.EmbeddingModel("text-embedding-004")
+	res, err := em.EmbedContent(ctx, genai.Text(word1))
+
+```
+
+But, this works for now!
+
+I know, I know. Seting up a proper server would eliminate all of these issues. But...for such a small usecase is it worth it? I don't think so.
+
+Sayonara!

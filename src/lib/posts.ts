@@ -8,7 +8,7 @@ type Metadata = {
   image?: string;
   featured?: string;
   tag?: string;
-  isDraft?:string;
+  isDraft?: string;
 };
 
 function parseFrontmatter(fileContent: string) {

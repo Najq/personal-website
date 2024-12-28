@@ -10,7 +10,6 @@ import { Redis } from '@upstash/redis';
 
 import { ReportView } from './view';
 
-const redis = Redis.fromEnv();
 export const revalidate = 0;
 
 export async function generateMetadata({
@@ -58,9 +57,6 @@ export default async function Blog({ params }: { params: any }) {
   if (!post) {
     notFound();
   }
-  const views =
-    (await redis.get<number>(['pageviews', 'posts', params.slug].join(':'))) ??
-    0;
 
   return (
     <div className="w-full pb-20">

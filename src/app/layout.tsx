@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 
 import '../styles/globals.css';
 
-import { ContextProvider } from '@/components/context-provider';
 import MaxWidthWrapper from '@/components/max-width-wrapper';
 import { Toaster } from 'sonner';
 
@@ -64,16 +63,14 @@ export default function RootLayout({
       <body
         className={`bg-primary text-secondary text-sm md:text-base ${inter.className}`}
       >
-        <ContextProvider>
-          <main className="min-h-screen flex flex-col items-center">
-            <Toaster richColors position="bottom-center" />
-            <MaxWidthWrapper>
-              <div className="flex-1 w-full flex flex-col gap-8 items-center">
-                {children}
-              </div>
-            </MaxWidthWrapper>
-          </main>
-        </ContextProvider>
+        <main className="min-h-screen flex flex-col items-center">
+          <Toaster richColors position="bottom-center" />
+          <MaxWidthWrapper>
+            <div className="flex-1 w-full flex flex-col gap-8 items-center">
+              {children}
+            </div>
+          </MaxWidthWrapper>
+        </main>
         <div className="pointer-events-none bg-primary fixed bottom-0 left-0 h-28 [mask-image:linear-gradient(transparent,#000000)] w-full"></div>
       </body>
     </html>

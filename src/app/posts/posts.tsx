@@ -5,16 +5,9 @@ import React from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
-import MaxWidthWrapper from '@/components/max-width-wrapper';
 import { calculateReadingTime, reformatDate } from '@/lib/utils';
 
-export default function Posts({
-  allPosts,
-  views,
-}: {
-  allPosts: any;
-  views: any;
-}) {
+export default function Posts({ allPosts }: { allPosts: any }) {
   const searchParams = useSearchParams();
   const tag = searchParams.get('tag');
 
@@ -48,7 +41,6 @@ export default function Posts({
         <span className="text-4xl font-bold mb-6 md:mb-4 animate-slide-from-down-and-fade-2">
           All Posts
         </span>
-        
 
         <div>
           <div className="grid grid-cols-1 gap-6 md:gap-1 md:-px-2 animate-slide-from-down-and-fade-3">
